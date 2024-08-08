@@ -62,10 +62,10 @@ After this, you will see a similar message in your terminal:
 ```bash
 VITE v5.2.12  ready in 237 ms
 
-➜  Local:   http://localhost:5173/reactjs-template
-➜  Network: http://172.18.16.1:5173/reactjs-template
-➜  Network: http://172.19.32.1:5173/reactjs-template
-➜  Network: http://192.168.0.171:5173/reactjs-template
+➜  Local:   http://localhost:5173/telegram-mini-app
+➜  Network: http://172.18.16.1:5173/telegram-mini-app
+➜  Network: http://172.19.32.1:5173/telegram-mini-app
+➜  Network: http://192.168.0.171:5173/telegram-mini-app
 ➜  press h + enter to show help
 ```
 
@@ -73,7 +73,7 @@ Here, you can see the `Local` link, available locally, and `Network` links acces
 devices in the same network with the current device.
 
 To view the application, you need to open the `Local`
-link (`http://localhost:5173/reactjs-template` in this example) in your browser:
+link (`http://localhost:5173/telegram-mini-app` in this example) in your browser:
 
 ![Application](src/assets/images/application.png)
 
@@ -106,14 +106,14 @@ After uncommenting the function, run the `dev` script again and observe the outp
 ```bash
 VITE v5.2.12  ready in 265 ms
 
-➜  Local:   https://localhost:5173/reactjs-template
-➜  Network: https://172.18.16.1:5173/reactjs-template
-➜  Network: https://172.19.32.1:5173/reactjs-template
-➜  Network: https://192.168.0.171:5173/reactjs-template
+➜  Local:   https://localhost:5173/telegram-mini-app
+➜  Network: https://172.18.16.1:5173/telegram-mini-app
+➜  Network: https://172.19.32.1:5173/telegram-mini-app
+➜  Network: https://192.168.0.171:5173/telegram-mini-app
 ➜  press h + enter to show help
 ```
 
-Visiting the `Local` link (`https://localhost:5173/reactjs-template` in this example) in your
+Visiting the `Local` link (`https://localhost:5173/telegram-mini-app` in this example) in your
 browser, you will see the following warning:
 
 ![SSL Warning](src/assets/images/ssl-warning.png)
