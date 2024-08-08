@@ -1,0 +1,31 @@
+.confirm-modal {
+    padding: 10px 0;
+}
+
+.confirm-modal__content {
+    padding: 20px 16px;
+    border-bottom: 1px solid #C8C7CB;
+}
+
+.confirm-modal__title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.confirm-modal__footer {
+    display: flex;
+}
+
+.confirm-modal__line {
+    width: 1px;
+    height: 44px;
+    background-color: #C8C7CB;
+}
+
+.confirm-modal__btn {
+    height: 44px !important;
+
+    &:last-child {
+        color: var(--content-red);
+    }
+}

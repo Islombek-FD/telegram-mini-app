@@ -1,0 +1,13 @@
+.image {
+
+}
+
+.image__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image__item img {
+    object-fit: cover;
+}

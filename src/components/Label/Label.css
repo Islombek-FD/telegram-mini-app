@@ -1,0 +1,26 @@
+.c-label {
+  position: relative;
+  width: 100%;
+}
+
+.c-label__header {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.c-label__icon {
+  display: block;
+  margin-right: 2px;
+  color: var(--content-red);
+}
+
+.c-label__title {
+  padding-left: 16px;
+  font-size: var(--font-size-14);
+  line-height: 140%;
+  color: var(--content-gray);
+}
+
+.c-label__content {
+  display: block;
+}

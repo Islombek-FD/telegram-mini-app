@@ -1,0 +1,9 @@
+.c-rating {
+    display: flex;
+    column-gap: 4px;
+    margin-bottom: 4px;
+
+    svg {
+        cursor: pointer;
+    }
+}

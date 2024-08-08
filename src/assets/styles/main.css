@@ -1,0 +1,61 @@
+@import './base/normalize.css';
+@import './base/typography.css';
+@import './base/base.css';
+
+:root {
+  --border-radius-4: 4px;
+  --border-radius-6: 6px;
+  --border-radius-8: 8px;
+  --border-radius-10: 10px;
+  --border-radius-12: 12px;
+  --border-radius-14: 12px;
+  --border-radius-20: 20px;
+
+  --font-size-10: 0.625rem;
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+
+  --background-black: #000000;
+  --background-white: #ffffff;
+  --background-blue: #007AFF;
+  --background-green: #34C759;
+  --background-red: #f03a45;
+  --background-orange: #ff9500;
+  --background-yellow: #fed504;
+  --background-muted: #f5f5f5;
+  --background-secondary: #5a6d80;
+  --background-tertiary: #9baab8;
+  --background-disabled: #e0e6ec;
+  --background-line: #dbdbe7;
+  --background-table: #F9F9F9;
+  --background-loading: rgba(255, 255, 255, 0.9);
+  --background-loading-full: rgba(255, 255, 255, 0.5);
+
+  --content-black: #000000;
+  --content-white: #ffffff;
+  --content-blue: #007AFF;
+  --content-red: #f03a45;
+  --content-green: #34C759;
+  --content-orange: #ffa012;
+  --content-yellow: #fed504;
+  --content-secondary: #5a6d80;
+  --content-tertiary: #9baab8;
+  --content-gray: #8a8a8c;
+
+  --border-white: #ffffff;
+  --border-blue: #007AFF;
+  --border-red: #f03a45;
+  --border-green: #34C759;
+  --border-orange: #ffa012;
+  --border-secondary: #5a6d80;
+  --border-gray: #6d8297;
+  --border-line: #dbdbe7;
+
+  --shadow-field: 0 2px 5px rgba(0, 0, 0, 0.08);
+  --shadow-field-focus: 0 0 15px rgba(38, 120, 244, 0.35);
+  --shadow-box: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
+}

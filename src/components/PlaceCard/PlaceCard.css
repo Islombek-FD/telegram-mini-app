@@ -1,0 +1,28 @@
+.c-place-card {
+    margin-bottom: 24px;
+    padding: 24px 12px;
+    background-color: var(--background-white);
+    border-radius: var(--border-radius-12);
+}
+
+.c-place-card__info {
+    display: flex;
+    column-gap: 16px;
+}
+
+.c-place-card__rating {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.c-place-card__title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.c-place-card__description {
+    font-size: 18px;
+    color: #8E8E93;
+}

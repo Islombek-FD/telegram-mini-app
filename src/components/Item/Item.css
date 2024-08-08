@@ -1,0 +1,9 @@
+.c-item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    .right {
+        margin-left: auto;
+    }
+}

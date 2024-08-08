@@ -1,0 +1,134 @@
+.comment {
+
+}
+
+.comment__card {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 18px 16px 24px;
+    background-color: var(--background-white);
+    border-radius: var(--border-radius-10);
+}
+
+.comment__rating-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    padding: 28px;
+    background-color: var(--background-white);
+    border-radius: var(--border-radius-10);
+}
+
+.comment__rating-text {
+    font-weight: 500;
+    font-size: 14px;
+    color: #8E8E93;
+}
+
+.comment__rating {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 41px;
+    color: var(--content-blue);
+}
+
+.comment__count {
+    font-size: 18px;
+    color: #8E8E93;
+}
+
+.comment__items {
+    overflow-x: hidden;
+}
+
+.comment__item {
+    position: relative;
+    background-color: var(--background-white);
+    transition: transform .3s ease;
+
+    &.swiped {
+        transform: translateX(-150px);
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #C8C7CB;
+    }
+
+    &:first-child {
+        border-top-left-radius: var(--border-radius-10);
+        border-top-right-radius: var(--border-radius-10);
+    }
+
+    &:last-child {
+        border-bottom-left-radius: var(--border-radius-10);
+        border-bottom-right-radius: var(--border-radius-10);
+    }
+}
+
+.comment__item-content {
+    display: flex;
+    column-gap: 12px;
+    padding: 16px;
+}
+
+.comment__item-btns {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 16px);
+    display: flex;
+    column-gap: 16px;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform .3s ease;
+
+    &.visible {
+        transform: translateX(0);
+    }
+}
+
+.comment__item-btn {
+    width: 59px !important;
+    height: 59px !important;
+    transform: translateY(-50%);
+
+    & > div {
+        margin-right: 0;
+    }
+
+    &:not(:disabled):hover {
+        transform: translateY(-50%) scale(1.05) !important;
+    }
+}
+
+.comment__item-image {
+    border-radius: 50%;
+}
+
+.comment__item-info {
+    flex-grow: 1;
+}
+
+.comment__item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;
+    margin-bottom: 16px;
+}
+
+.comment__item-name {
+    font-weight: 500;
+}
+
+.comment__item-time {
+    font-size: 12px;
+    color: #8E8E93;
+}
+
+.comment__item-text {
+    line-height: 22px;
+    color: #8E8E93;
+}
