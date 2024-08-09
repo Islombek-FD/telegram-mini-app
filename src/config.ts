@@ -2,6 +2,7 @@ const ENV = import.meta.env;
 
 const config = {
   app: {
+    // TODO: Get User from Telegram by initData
     userId: 217258,
     placeId: 203675,
     env: ENV.MODE,
