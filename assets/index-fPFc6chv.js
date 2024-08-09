@@ -1,1 +1,0 @@
-import{u as o,r,j as e,I as t}from"./index-oI9GG1K_.js";const n=()=>{const s=o();return r.useEffect(()=>{const a=setTimeout(()=>{s("/onboarding")},2e3);return()=>clearTimeout(a)},[s]),e.jsxs("div",{className:"welcome",children:[e.jsx(t,{name:"TrueGis",size:110}),e.jsx(t,{name:"Spinner",size:52})]})},c=n;export{c as default};
