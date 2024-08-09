@@ -47,16 +47,23 @@
 }
 
 .general__items {
-    padding-left: 16px;
     background-color: var(--background-white);
     border-radius: var(--border-radius-8);
 }
 
 .general__item {
+    padding-left: 16px;
+    cursor: pointer;
+    transition: all .3s linear;
+
     &:not(:last-child) {
         .general__item-info {
             border-bottom: 1px solid #EFEFF4;
         }
+    }
+
+    &:hover {
+        opacity: .7;
     }
 }
 

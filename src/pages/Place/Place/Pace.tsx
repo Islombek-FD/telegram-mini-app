@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useUtils, useInitData } from '@telegram-apps/sdk-react';
 import moment from 'moment';
 import cx from 'classnames';
 
@@ -27,6 +28,8 @@ enum TABS {
 }
 
 const Pace: React.FC = () => {
+  const utils = useUtils();
+  const initData = useInitData();
   const [activeTab, setActiveTab] = useState<TABS>(TABS.GENERAL);
 
   const { item, isFetched } = useSingle({ id: config.app.placeId });
@@ -74,7 +77,15 @@ const Pace: React.FC = () => {
           <div className='place__head-icon'>
             <Icon name='Heart' color='#ffffff' size={24} />
           </div>
-          <div className='place__head-icon'>
+          <div
+            className='place__head-icon'
+            onClick={() => {
+              const username = initData?.user?.username;
+              if (username) {
+                utils.shareURL(username);
+              }
+            }}
+          >
             <Icon name='Share' color='#ffffff' size={24} />
           </div>
         </div>

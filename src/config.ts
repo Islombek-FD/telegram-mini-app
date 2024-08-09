@@ -9,7 +9,7 @@ const config = {
     isDev: ENV.MODE !== 'production',
   },
   api: {
-    baseUrl: ENV.VITE_API_URL + '/api/',
+    baseUrl: ENV.VITE_API_URL + '/api',
   },
 };
 

@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { useUtils } from '@telegram-apps/sdk-react';
 
 import { RootState } from '@/store';
 
@@ -13,6 +14,7 @@ import Title from '@/components/Title';
 import './General.css';
 
 const General: React.FC = () => {
+  const utils = useUtils();
   const navigate = useNavigate();
   const item = useSelector((state: RootState) => state.place.item);
 
@@ -43,7 +45,7 @@ const General: React.FC = () => {
             key: 'Aloqa raqami',
             value: item.phone,
             valueColor: '#007AFF',
-            onClick: () => {},
+            onClick: () => utils.openLink(`tel:${item.phone}`),
           },
           {
             icon: 'Phone',
@@ -51,7 +53,7 @@ const General: React.FC = () => {
             key: 'Qo’shimcha aloqa raqami',
             value: item.phone2,
             valueColor: '#007AFF',
-            onClick: () => {},
+            onClick: () => utils.openLink(`tel:${item.phone2}`),
           },
           {
             icon: 'Network',
@@ -59,7 +61,7 @@ const General: React.FC = () => {
             key: 'Web sayti',
             value: item.website,
             valueColor: '#007AFF',
-            onClick: () => {},
+            onClick: () => utils.openLink(item.website),
           },
         ],
       },

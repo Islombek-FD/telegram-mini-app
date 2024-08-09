@@ -12,6 +12,10 @@
     border-top-right-radius: var(--border-radius-10);
 }
 
+.problem__item {
+    cursor: pointer;
+}
+
 .problem__item-icon {
     flex-shrink: 0;
     display: grid;

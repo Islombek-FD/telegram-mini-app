@@ -9,6 +9,7 @@ import {
   useMiniApp,
   useThemeParams,
   useViewport,
+  useSettingsButton,
 } from '@telegram-apps/sdk-react';
 
 import routes from '@/routes';
@@ -19,8 +20,10 @@ const App: React.FC = () => {
   const miniApp = useMiniApp();
   const themeParams = useThemeParams();
   const viewport = useViewport();
+  const settingsButton = useSettingsButton();
 
   useEffect(() => {
+    settingsButton.hide();
     return bindMiniAppCSSVars(miniApp, themeParams);
   }, [miniApp, themeParams]);
 
