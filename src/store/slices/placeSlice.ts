@@ -21,7 +21,7 @@ const placeSlice = createSlice({
       state.item = action.payload;
     },
     removePlace: state => {
-      state.item = initialState.item;
+      state.item = { ...initialState.item };
     },
   },
 });

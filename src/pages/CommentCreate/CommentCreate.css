@@ -15,5 +15,5 @@
 .comment-create__rating-text {
     font-weight: 500;
     font-size: 14px;
-    color: #8E8E93;
+    color: var(--content-gray);
 }

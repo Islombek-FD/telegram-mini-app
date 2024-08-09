@@ -67,7 +67,7 @@
     padding: 12px 8px;
     text-align: center;
     font-weight: 500;
-    color: #8E8E93;
+    color: var(--content-gray);
     border-radius: var(--border-radius-6);
     transition: all 0.3s ease;
 }

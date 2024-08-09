@@ -30,7 +30,7 @@
 .problem-item__value {
     display: -webkit-box;
     font-size: 14px;
-    color: #8E8E93;
+    color: var(--content-gray);
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 1;

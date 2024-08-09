@@ -14,7 +14,7 @@
   }
 
   &.size-small .c-btn__title {
-    font-size: var(--font-size-12);
+    font-size: 12px;
   }
 
   &.size-medium {
@@ -22,7 +22,7 @@
   }
 
   &.size-medium .c-btn__title {
-    font-size: var(--font-size-14);
+    font-size: 14px;
   }
 
   &.size-large {
@@ -30,7 +30,7 @@
   }
 
   &.size-large .c-btn__title {
-    font-size: var(--font-size-16);
+    font-size: 16px;
   }
 
   &.variant-blue {

@@ -30,7 +30,7 @@
 .general__tab {
     padding: 12px 8px;
     font-weight: 500;
-    color: #8E8E93;
+    color: var(--content-gray);
     border-radius: var(--border-radius-6);
     transition: all 0.3s ease;
 }
@@ -85,7 +85,6 @@
 .general__item-value {
     display: -webkit-box;
     font-size: 14px;
-    color: #8E8E93;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 1;

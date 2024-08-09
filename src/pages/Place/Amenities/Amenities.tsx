@@ -1,20 +1,47 @@
 import React, { useMemo } from 'react';
-import { useSelector } from 'react-redux';
-
-import { RootState } from '@/store';
 
 import ProblemItem from '@/containers/ProblemItem';
 
+import Icon from '@/components/Icon';
 import Title from '@/components/Title';
 import PlaceCard from '@/components/PlaceCard';
 
 import './Amenities.css';
 
 const Amenities: React.FC = () => {
-  const place = useSelector((state: RootState) => state.place.item);
-
-  const days = useMemo(
-    () => ['Dushanba', 'Seshanba', 'Chorshanba', 'Payshanba', 'Juma', 'Shanba', 'Yakshanba'],
+  const items = useMemo(
+    () => [
+      {
+        icon: 'Wifi',
+        name: 'Wi-fi',
+        value: 'Mavjud',
+      },
+      {
+        icon: 'PaymentCard',
+        name: 'Karta orqali to’lov',
+        value: 'Mavjud',
+      },
+      {
+        icon: 'Car',
+        name: 'Bepul parking',
+        value: 'Mavjud',
+      },
+      {
+        icon: 'Toilet',
+        name: 'Hojatxona',
+        value: 'Mavjud',
+      },
+      {
+        icon: 'BabyCarriage',
+        name: 'Bolalar xonasi',
+        value: 'Mavjud',
+      },
+      {
+        icon: 'RestRoom',
+        name: 'Dam olish xonasi',
+        value: 'Mavjud',
+      },
+    ],
     [],
   );
 
@@ -25,15 +52,15 @@ const Amenities: React.FC = () => {
       <Title text='Joy qulayliklari' />
 
       <div className='amenities__items'>
-        <div className='amenities__item'>
-          <span className='amenities__item-key green'>Ochiq</span>
-          <span className='amenities__item-value'>{`${place.workStartTime || '09:00'} - ${place.workEndTime || '18:00'}`}</span>
-        </div>
-
-        {place.workDays.map(item => (
-          <div className='amenities__item' key={item.dayOfWeek}>
-            <span className='amenities__item-key'>{days[item.dayOfWeek - 1]}</span>
-            <span className='amenities__item-value'>{`${item.startTime} - ${item.endTime}`}</span>
+        {items.map((item, index) => (
+          <div className='amenities__item' key={index}>
+            <div className='amenities__item-icon'>
+              <Icon name={item.icon} color='#ffffff' />
+            </div>
+            <div className='amenities__item-info'>
+              <span className='amenities__item-name'>{item.name}</span>
+              <span className='amenities__item-value'>{item.value}</span>
+            </div>
           </div>
         ))}
       </div>

@@ -17,12 +17,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 44px;
+    column-gap: 16px;
+    padding-left: 4px;
+}
+
+.amenities__item-icon {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--background-blue);
+    border-radius: 7px;
+}
+
+.amenities__item-info {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 16px 11px 0;
     border-bottom: 1px solid #EFEFF4;
 }
 
-.amenities__item-key {
-    &.green {
-        color: var(--content-green);
-    }
+.amenities__item-name {
+
+}
+
+.amenities__item-value {
+    color: var(--content-green);
 }

@@ -72,10 +72,10 @@ const Pace: React.FC = () => {
 
         <div className='place__head-icons'>
           <div className='place__head-icon'>
-            <Icon name='Heart' color='#fff' size={24} />
+            <Icon name='Heart' color='#ffffff' size={24} />
           </div>
           <div className='place__head-icon'>
-            <Icon name='Share' color='#fff' size={24} />
+            <Icon name='Share' color='#ffffff' size={24} />
           </div>
         </div>
       </div>

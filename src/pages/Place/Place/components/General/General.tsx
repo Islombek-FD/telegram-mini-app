@@ -23,37 +23,42 @@ const General: React.FC = () => {
         items: [
           {
             icon: 'Location',
-            iconColor: '#007AFF',
+            iconBgColor: '#007AFF',
             key: 'Manzil',
             value: item.fullAddress,
+            valueColor: '#8E8E93',
             onClick: () => {},
           },
           {
             icon: 'Car',
-            iconColor: '#FF9500',
+            iconBgColor: '#FF9500',
             key: 'Manzilgacha Yandex-taxi',
             value: '4km • 15-20 min • 20,000 so’m',
+            valueColor: '#8E8E93',
             onClick: () => {},
           },
           {
             icon: 'Phone',
-            iconColor: '#007AFF',
+            iconBgColor: '#007AFF',
             key: 'Aloqa raqami',
             value: item.phone,
+            valueColor: '#007AFF',
             onClick: () => {},
           },
           {
             icon: 'Phone',
-            iconColor: '#007AFF',
+            iconBgColor: '#007AFF',
             key: 'Qo’shimcha aloqa raqami',
             value: item.phone2,
+            valueColor: '#007AFF',
             onClick: () => {},
           },
           {
             icon: 'Network',
-            iconColor: '#34C759',
+            iconBgColor: '#34C759',
             key: 'Web sayti',
             value: item.website,
+            valueColor: '#007AFF',
             onClick: () => {},
           },
         ],
@@ -63,16 +68,18 @@ const General: React.FC = () => {
         items: [
           {
             icon: 'Clock',
-            iconColor: '#007AFF',
+            iconBgColor: '#007AFF',
             key: 'Ishlash vaqtlari',
             value: `Ochiq • ${item.workStartTime} - ${item.workEndTime}`,
+            valueColor: '#8E8E93',
             onClick: () => navigate('/place/work-times'),
           },
           {
             icon: 'PuzzlePiece',
-            iconColor: '#FF9500',
+            iconBgColor: '#FF9500',
             key: 'Qulayliklar',
             value: 'Wi-fi • Karta orqali to’lash • Halol',
+            valueColor: '#8E8E93',
             onClick: () => navigate('/place/amenities'),
           },
         ],
@@ -92,7 +99,7 @@ const General: React.FC = () => {
               <Item
                 className='general__item'
                 left={
-                  <div className='general__item-icon' style={{ backgroundColor: item.iconColor }}>
+                  <div className='general__item-icon' style={{ backgroundColor: item.iconBgColor }}>
                     <Icon name={item.icon} color='#ffffff' size={28} />
                   </div>
                 }
@@ -100,7 +107,9 @@ const General: React.FC = () => {
                   <div className='general__item-info'>
                     <div>
                       <strong className='general__item-key'>{item.key}</strong>
-                      <span className='general__item-value'>{item.value}</span>
+                      <span className='general__item-value' style={{ color: item.valueColor }}>
+                        {item.value}
+                      </span>
                     </div>
                     <div>
                       <Icon name='ChevronRight' color='#7F7F7F' size={24} />

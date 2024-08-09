@@ -25,7 +25,7 @@
 .comment__rating-text {
     font-weight: 500;
     font-size: 14px;
-    color: #8E8E93;
+    color: var(--content-gray);
 }
 
 .comment__rating {
@@ -37,7 +37,7 @@
 
 .comment__count {
     font-size: 18px;
-    color: #8E8E93;
+    color: var(--content-gray);
 }
 
 .comment__items {
@@ -125,10 +125,10 @@
 
 .comment__item-time {
     font-size: 12px;
-    color: #8E8E93;
+    color: var(--content-gray);
 }
 
 .comment__item-text {
     line-height: 22px;
-    color: #8E8E93;
+    color: var(--content-gray);
 }

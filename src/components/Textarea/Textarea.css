@@ -26,7 +26,7 @@
   margin: 0;
   padding: 12px;
   font-weight: 400;
-  font-size: var(--font-size-14);
+  font-size: 14px;
   line-height: 23px;
   background-color: var(--background-white);
   color: var(--content-black);
@@ -38,7 +38,7 @@
 
   &::placeholder {
     font-weight: 400;
-    font-size: var(--font-size-14);
+    font-size: 14px;
     line-height: 150%;
     color: var(--content-tertiary);
   }
@@ -59,7 +59,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  font-size: var(--font-size-12);
+  font-size: 12px;
   line-height: 1;
   color: var(--content-red);
 }

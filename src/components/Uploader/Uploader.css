@@ -64,7 +64,7 @@
   /*width: 100%;*/
   /*padding: 5px 8px;*/
   /*font-weight: 600;*/
-  /*font-size: var(--font-size-14);*/
+  /*font-size: 14px;*/
   /*line-height: 140%;*/
   /*text-align: center;*/
   /*background-color: var(--background-white);*/
@@ -196,7 +196,7 @@
 .c-uploader__progress-title,
 .c-uploader__progress-percent {
   font-weight: 700;
-  font-size: var(--font-size-14);
+  font-size: 14px;
   line-height: 140%;
   color: var(--content-blue);
 }
@@ -237,7 +237,7 @@
 
 .c-uploader__progress-info {
   font-weight: 600;
-  font-size: var(--font-size-12);
+  font-size: 12px;
   line-height: 140%;
   color: var(--content-secondary);
 }
@@ -247,7 +247,7 @@
   top: calc(100% + 3px);
   left: 0;
   display: block;
-  font-size: var(--font-size-12);
+  font-size: 12px;
   line-height: 1;
   color: var(--content-red);
 }
